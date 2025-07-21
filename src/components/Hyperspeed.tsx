@@ -1308,7 +1308,7 @@ const Hyperspeed: FC<HyperspeedProps> = ({ effectOptions = {} }) => {
     return (
         <div
             id="lights"
-            className="absolute inset-0"
+            className="absolute inset-0 z-5"
             ref={hyperspeed}
         ></div>
     );
