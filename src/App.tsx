@@ -1,11 +1,10 @@
-import './App.css'
 import Hero from './pages/Hero'
 
 
 function App() {
 
   return (
-    <div className="w-screen h-screen">
+    <div className="min-h-screen">
       <Hero/>
     </div>
   )

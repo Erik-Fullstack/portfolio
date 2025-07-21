@@ -4,10 +4,10 @@ import DecryptedText from '../components/DecryptedText'
 
 export default function Hero() {
     return (
-        <div className='w-screen h-screen'>
+        <div className='min-h-screen relative'>
             <Particles />
             <Hyperspeed />
-            <div className="container flex relative z-10 justify-center mx-auto pt-60">
+            <div className="flex relative z-10 justify-center mx-auto pt-60">
                 <DecryptedText
                     encryptedClassName="text-7xl font-semibold"
                     className="lato-regular text-7xl font-semibold"
