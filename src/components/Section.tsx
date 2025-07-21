@@ -5,7 +5,7 @@ import ProfilePic from "../assets/ProfilePic.png"
 
 export default function Section() {
     return (
-        <section className="flex justify-between pt-14 px-14 relative z-10">
+        <section className="flex justify-between pt-14 px-14 relative">
             <HeroText />
             <div className="px-16 pb-14">
                 <ProfileCard

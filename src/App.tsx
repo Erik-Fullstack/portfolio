@@ -6,7 +6,7 @@ import Particles from './components/Particles'
 function App() {
   // Flytta particles och hyperspeed till en egen bakgrundsdiv och fixa section.
   return (
-    <div className="relative w-screen h-screen">
+    <div className="hejhej relative w-screen h-screen">
       <Particles
         particleColors={["#ffffff"]}
         alphaParticles
