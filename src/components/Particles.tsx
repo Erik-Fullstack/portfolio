@@ -239,7 +239,7 @@ const Particles: React.FC<ParticlesProps> = ({
     return (
         <div
             ref={containerRef}
-            className={`fixed inset-0 -z-10 ${className}`}
+            className={`absolute inset-0 -z-10 ${className}`}
         />
     );
 };
