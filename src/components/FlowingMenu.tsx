@@ -86,7 +86,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
             <React.Fragment key={idx}>
                 <span>{text}</span>
                 <div
-                    className="marquee__img"
+                    className="marquee__img border-1 border-[#101828]"
                     style={{ backgroundImage: `url(${image})` }}
                 />
             </React.Fragment>
