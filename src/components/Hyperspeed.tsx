@@ -92,8 +92,8 @@ const defaultOptions: HyperspeedOptions = {
     carShiftX: [-0.8, 0.8],
     carFloorSeparation: [0, 5],
     colors: {
-        roadColor: 0x080808,
-        islandColor: 0x0a0a0a,
+        roadColor: 0x181818,
+        islandColor: 0x222222,
         background: 0x000000,
         shoulderLines: 0xffffff,
         brokenLines: 0xffffff,
