@@ -32,8 +32,8 @@ interface Colors {
 }
 
 interface HyperspeedOptions {
-    onSpeedUp?: (ev: MouseEvent) => void;
-    onSlowDown?: (ev: MouseEvent) => void;
+    onSpeedUp?: (ev: MouseEvent | TouchEvent) => void;
+    onSlowDown?: (ev: MouseEvent | TouchEvent) => void;
     distortion?: string | Distortion;
     length: number;
     roadWidth: number;
@@ -1076,7 +1076,8 @@ class App {
         this.setSize = this.setSize.bind(this);
         this.onMouseDown = this.onMouseDown.bind(this);
         this.onMouseUp = this.onMouseUp.bind(this);
-
+        this.onTouchDown = this.onTouchDown.bind(this);
+        this.onTouchUp = this.onTouchDown.bind(this);
         window.addEventListener("resize", this.onWindowResize.bind(this));
     }
 
@@ -1165,8 +1166,22 @@ class App {
         this.container.addEventListener("mousedown", this.onMouseDown);
         this.container.addEventListener("mouseup", this.onMouseUp);
         this.container.addEventListener("mouseout", this.onMouseUp);
-
+        this.container.addEventListener("touchstart", this.onTouchDown);
+        this.container.addEventListener("touchend", this.onTouchUp);
+        this.container.addEventListener("touchcancel", this.onTouchUp);
         this.tick();
+    }
+
+    onTouchDown(ev: TouchEvent) {
+        if (this.options.onSpeedUp) this.options.onSpeedUp(ev);
+        this.fovTarget = this.options.fovSpeedUp;
+        this.speedUpTarget = this.options.speedUp;
+    }
+
+    onTouchUp(ev: TouchEvent) {
+        if (this.options.onSlowDown) this.options.onSlowDown(ev);
+        this.fovTarget = this.options.fov;
+        this.speedUpTarget = 0;
     }
 
     onMouseDown(ev: MouseEvent) {
@@ -1246,6 +1261,9 @@ class App {
             this.container.removeEventListener("mousedown", this.onMouseDown);
             this.container.removeEventListener("mouseup", this.onMouseUp);
             this.container.removeEventListener("mouseout", this.onMouseUp);
+            this.container.removeEventListener("touchstart", this.onTouchDown);
+            this.container.removeEventListener("touchend", this.onTouchUp);
+            this.container.removeEventListener("touchcancel", this.onTouchUp);
         }
     }
 
