@@ -7,8 +7,8 @@ export default function Header() {
     }
     return (
         <header className='absolute h-16 w-full flex justify-center items-center gap-20 z-10'>
-            <button onClick={() => scrollTo("About")} className="text-2xl">About</button>
-            <button onClick={() => scrollTo("Projects")} className="text-2xl">Projects</button>
+            <button onClick={() => scrollTo("About")} className="text-2xl">ABOUT</button>
+            <button onClick={() => scrollTo("Projects")} className="text-2xl">PROJECTS</button>
         </header>
     )
 }
