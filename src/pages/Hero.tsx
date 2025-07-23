@@ -7,7 +7,7 @@ export default function Hero() {
         <div className='min-h-screen z-3 sticky top-0'>
             <Particles />
             <Hyperspeed />
-            <div className="flex flex-col relative z-5 items-center mx-auto pt-60">
+            {/* <div className="flex flex-col relative z-5 items-center mx-auto pt-60">
                 <DecryptedText
                     encryptedClassName="text-7xl font-semibold"
                     className="text-7xl font-semibold"
@@ -28,7 +28,7 @@ export default function Hero() {
                     speed={60}
                     useOriginalCharsOnly={false}
                 />
-            </div>
+            </div> */}
         </div>
     )
 }

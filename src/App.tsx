@@ -1,5 +1,5 @@
 import Hero from './pages/Hero'
-import TestPage from './pages/About'
+import About from './pages/About'
 import SecondTest from './pages/Projects'
 import Header from './components/Header'
 
@@ -13,7 +13,7 @@ function App() {
     <div className="min-h-screen">
       <Header/>
       <Hero />
-      <TestPage />
+      <About />
       <SecondTest />
     </div>
   )
