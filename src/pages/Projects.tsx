@@ -5,12 +5,14 @@ import jobchaser from "../assets/JobChaser.png"
 import portfolio from "../assets/PortfolioBild.png"
 import quizApp from "../assets/QuizApp.png"
 import DecryptedText from '../components/DecryptedText'
+import reactionGame from "../assets/ReactionGame.png"
 
 const items = [
     { link: 'https://github.com/Erik-Fullstack/theplayersacademy', text: 'The Players Academy', image: tpa },
     { link: 'https://github.com/Erik-Fullstack/portfolio', text: 'denna Portfolio', image: portfolio },
-    { link: 'https://github.com/FilipHans/u03-team-AW', text: 'quizzy', image: quizApp },
-    { link: 'https://github.com/Erik-Fullstack/u07-nextjs-jobchaser', text: 'Jobchaser', image: jobchaser }
+    { link: 'https://github.com/Erik-Fullstack/u07-nextjs-jobchaser', text: 'Jobchaser', image: jobchaser },
+    { link: 'https://reaction-speed-test-game.netlify.app/', text: 'Reaction Game', image: reactionGame },
+    { link: 'https://github.com/FilipHans/u03-team-AW', text: 'quizzy', image: quizApp }
 ];
 export default function SecondTest() {
 
