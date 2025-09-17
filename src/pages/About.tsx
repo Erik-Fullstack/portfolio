@@ -19,7 +19,7 @@ export default function TestPage() {
                         <div className='flex gap-4 justify-evenly pt-2 lg:pt-15'>
                             <a href='https://www.linkedin.com/in/erik-fullstack/' target='_blank'><img src={linkedin} alt="Linkedin" /></a>
                             <a href='https://github.com/Erik-Fullstack' target='_blank'><img src={github} alt="Github" /></a>
-                            <a href='https://drive.google.com/file/d/1DXzLQWobWbxgJ-gLURRiYYLHHdcbWBJo/view' target='_blank'><img src={page} alt="Resume" /></a>
+                            <a href='https://drive.google.com/file/d/1gUxXTq5tFqFqpJCJsV8JbRy7ZTHZyReJ/view' target='_blank'><img src={page} alt="Resume" /></a>
                         </div>
                     </div>
                     <div className=''>

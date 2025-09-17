@@ -14,7 +14,7 @@ const items = [
     { link: 'https://reaction-test-game-omega.vercel.app/', text: 'Reaction Game', image: reactionGame },
     { link: 'https://github.com/FilipHans/u03-team-AW', text: 'quizzy', image: quizApp }
 ];
-export default function SecondTest() {
+export default function Projects() {
 
     return (
         <div className="min-h-screen relative z-10 bg-black flex flex-col gap-10 justify-center items-center" id='Projects'>

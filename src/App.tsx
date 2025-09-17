@@ -1,6 +1,6 @@
 import Hero from './pages/Hero'
 import About from './pages/About'
-import SecondTest from './pages/Projects'
+import Projects from './pages/Projects'
 import Header from './components/Header'
 
 // TODO:
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <SecondTest />
+      <Projects />
     </div>
   )
 }
